@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Students</title>
+    <link rel="stylesheet" href="add-students.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add New Student</h2>
+        <form id="add-student-form">
+            <input type="text" id="firstName" placeholder="First Name" required><br>
+            <input type="text" id="lastName" placeholder="Last Name" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <input type="text" id="cnic" placeholder="CNIC" required><br>
+            
+            
+            <label for="userType">User Type:</label>
+            <select id="userType" required>
+                <option value="Student">Student</option>
+            </select><br>
+
+            <button type="submit">Add Student</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script type="module" src="add-students.js"></script>
+</body>
+</html>
